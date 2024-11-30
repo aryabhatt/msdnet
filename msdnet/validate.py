@@ -81,7 +81,7 @@ class LossValidation(Validation):
     def __init__(self, data, loss=None, keep=True):
         self.d = data
         self.keep = keep
-        self.best = np.Inf
+        self.best = np.inf
         self.loss = loss
     
     def errorfunc(self, output, target, msk):
@@ -151,8 +151,8 @@ class LossValidation(Validation):
         errs = np.zeros(len(self.d))
         if self.keep:
             self.outputs = [0,0,0]
-        low = np.Inf
-        high = -np.Inf
+        low = np.inf
+        high = -np.inf
         self.idx = [0,0,0]
         for i,d in enumerate(self.d):
             out = self.n.forward(d.input)
