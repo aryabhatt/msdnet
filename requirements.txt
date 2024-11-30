@@ -1,0 +1,7 @@
+scikit-build
+numpy
+h5py
+tqdm
+imageio
+scikit-image
+numba
